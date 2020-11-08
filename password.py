@@ -1,11 +1,11 @@
 import re
 while True:
-    password = input('Введите пароль: ')
+    password = input('Enter password: ')
     if len(password) >= 8 and re.search(r"[A-Z]", password) and re.search(r"[0-9]", password):
-        print ( 'Пароль сложный' )
+        print ( f'Password is hard' )
         break
     else:
-        print ( 'Пароль простой' )
+        print ( f'Password is simple' )
 
 """
 Программа оценивает сложность пароля.

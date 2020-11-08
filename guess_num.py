@@ -17,35 +17,30 @@
 if __name__ == '__main__':
     pass
 
-
-
 print ('Welcome! Please guess the number!')
 import random
 any_number = random.randint(1, 1000000)
-entered_number = input('Please, guess the number: ')
-
-while entered_number != ( '','exit' ) :
-    if entered_number == "" or entered_number == "exit":
-        print("Wrong")
+while True:
+    number = input(f'Please, guess the number: ')
+    if number == "" or number == "exit":
+        print("Wrong!")
         break
 
-    if not entered_number.isdigit():
-        print("Please, insert the number")
+    if not number.isdigit():
+        print(f"Please, insert the number")
         continue
 
-    try entered_number = int(entered_number)
+    number = int(any_number)
 
-    if entered_number < 1 or entered_number > 1000000:
-        print("Number isn't in range")
+    if number < 1 or number > 1000000:
+        print(f"Number isn't in range")
         continue
 
-    if entered_number == any_number:
-        print('You are Right!!!')
+    if number == any_number:
+        print(f'You are Right!!!')
         break
  
-    elif entered_number < any_number:
-        print('The number is bigger')
+    elif number < any_number:
+        print(f'The number is bigger')
     else:
-        print('The number is less')
-
-entered_number = input('Please, guess the number: ')
+        print(f'The number is less')

@@ -6,6 +6,7 @@ while True:
         break
     else:
         print ( f'Password is simple' )
+pass
 
 """
 Программа оценивает сложность пароля.

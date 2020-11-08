@@ -44,7 +44,7 @@ while entered_number != ( '','exit' ) :
         break
  
     elif entered_number < any_number:
-        print('The number is greater')
+        print('The number is bigger')
     else:
         print('The number is less')
 

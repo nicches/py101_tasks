@@ -25,7 +25,6 @@ while True:
     if number == "" or number == "exit":
         print("Wrong!")
         break
-
     if not number.isdigit():
         print(f"Please, insert the number")
         continue
@@ -35,10 +34,10 @@ while True:
     if number < 1 or number > 1000000:
         print(f"Number isn't in range")
         continue
-
     if number == any_number:
         print(f'You are Right!!!')
         break
+ 
  
     elif number < any_number:
         print(f'The number is bigger')

@@ -1,9 +1,9 @@
-for i in range ( 1, 101 ) :
-    if i // 3 == 1 :
+for number in range ( 1, 101 ) :
+    if number // 3 == 1 :
         print ( "zip" )
-    elif i // 5 == 1 :
+    elif number // 5 == 1 :
         print ( "zap")
-    elif i // 15 == 1 :
+    elif number // 15 == 1 :
         print ( "zip-zap")
 pass
 

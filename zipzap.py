@@ -1,10 +1,10 @@
 for number in range ( 1, 101 ) :
     if number // 3 == 1 :
-        print ( "zip" )
+        print ( f"zip" )
     elif number // 5 == 1 :
-        print ( "zap")
+        print ( f"zap")
     elif number // 15 == 1 :
-        print ( "zip-zap")
+        print ( f"zip-zap")
 pass
 
 
